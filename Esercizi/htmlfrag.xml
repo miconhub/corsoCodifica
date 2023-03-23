@@ -1,0 +1,5 @@
+<!--Inserire all’interno di un tag un frammento di codice HTML-->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<htmlCode><![CDATA][<h1>Canto I</h1>
+<l>Nel mezzo del cammin di nostra vita</l>
+]]></htmlCode>
