@@ -1,0 +1,7 @@
+<!--Creare un file .xml ed inserire un prologo con la dichiarazione
+XML e un commento con le vostre informazioni.-->
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- This document contains data on Text Encoding Class
+Filename: prologo.xml
+Author: Michaela Tognoni
+Date: 24/10/2022-->
