@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<?xml-stylesheet type="text/xsl" href="fogliodistile.xsl"?>
+
+<!--Codifica di cartoline storiche: progetto per l'esame del corso di 
+Codifica di testi dell'Università di Pisa AA 2021/2022
+A cura di: Michaela Tognoni Mat. 607051 (m.tognoni3@studenti.unipi.it)-->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="it">
+        <fileDesc>
+            <titleStmt>
+                    <title xml:id="titolo">Codifica Cartoline In Edizione Digitale</title>
+                    <respStmt>
+                        <resp>Trascrizione e codifica TEI a cura di</resp>
+                        <name xml:id="MT">Michaela Tognoni</name>
+                    </respStmt>
+
+                    <respStmt>
+                    <!--Ente di appartenenza-->
+                        <resp>Ente di Appartenenza</resp>
+                        <name type="comune" ref="SP">Comune della Spezia</name>
+                    </respStmt>
+            </titleStmt>
+
+            <editionStmt>
+                <edition> Studenti di Codifica di Testi, Corso di Laurea Triennale in Informatica Umanistica,
+                <orgName ref="UniPi">Università di Pisa</orgName>
+                    <date>2023</date>
+                </edition>
+
+                <respStmt>
+                    <resp>Codifica a cura di</resp>
+                    <name ref="#MT">Michaela Tognoni</name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Compilatore</resp>
+                    <name xml:id="TC">Tommaso Castagneto</name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Responsabile scientifico</resp>
+                    <name xml:id="GP">Giacomo Paolicchi</name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Funzionario responsabile</resp>
+                    <name xml:id="MR">Marzia Ratti</name>
+                </respStmt>
+
+            </editionStmt>
+
+            <publicationStmt>
+                <publisher>
+                <orgName type="university">Università di Pisa</orgName>
+                </publisher>
+
+                <pubPlace>
+                <placeName ref="#PI">Pisa</placeName>
+                </pubPlace>
+
+                <availability>
+                    <p>Disponibile solo su licenza</p>
+                </availability>
+
+                <date when="2019">2019</date>
+
+                <distributor>LabCD</distributor>
+
+                <address>
+                    <addrLine>Laboratorio di Cultura Digitale - <orgName type="university">Università di Pisa</orgName></addrLine>
+                    
+                    <addrLine><placeName ref="#PI">Pisa</placeName></addrLine>
+                </address>
+            </publicationStmt>
+
+            <sourceDesc>
+                <bibl type="cartolina">
+                    <respStmt>
+                        <resp>Ente di appartenenza:</resp>
+                        <name>Sistema bibliotecario e museale <placeName ref="#SP">Comune di La Spezia</placeName></name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Luogo di conservazione delle cartoline originali:</resp>
+                        <name type="institution">Museo Civico Etnografico "<persName><forename>Giovanni</forename> <surname>Podenzana</surname></persName>"</name>
+                    </respStmt>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <country>Italia</country>
+                        <settlement><placeName ref="#SP">La Spezia</placeName> (SP)</settlement>
+                        <repository>Museo Civico Etnografico "<persName><forename>Giovanni</forename> <surname>Podenzana</surname></persName>", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                        
+                        <!--Codice identificativo-->
+                        <idno xml:id="idno118">7694_118_001/002</idno>
+                        <idno xml:id="idno125">7694_125_001/002</idno>
+                    </msIdentifier>
+
+                    <msContents>
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType>Cartolina</objectType>
+                                    <!--Materiali-->
+                                    <material>Carta</material>
+                                    <!--Dimensione-->
+                                    <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+                                    <stamp>Francobollo - Regno d'Italia</stamp>
+                                </support>
+                                <condition>Buono</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>            
+                </msDesc>
+
+                <!--Nomi-->
+                <listPerson>
+                    <person xml:id="GC" role="sender">
+                        <persName>
+                            <forename>Giovanni</forename>
+                            <surname>Coliola</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <occupation n="1">Maggiore</occupation>
+                        <nationality key="IT">italiana</nationality>
+                            <langKnowledge> 
+                                <langKnown tag="it-IT">italiano</langKnown>
+                            </langKnowledge>   
+                    </person>
+
+                    <person xml:id="OT" role="addressee">
+                        <persName>
+                            <forename>Olivia</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <nationality key="IT">italiana</nationality>
+                            <langKnowledge> 
+                                <langKnown tag="it-IT">italiano</langKnown>
+                            </langKnowledge>   
+                    </person>
+
+                    <person xml:id="AM" role="artist">
+                        <persName>
+                            <forename>Achille Luciano</forename>
+                            <surname>Mauzan</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <nationality key="FR">francese</nationality>
+                        <occupation>Artista</occupation>
+                    </person>
+                    <person xml:id="RS" role="artist">
+                        <persName>
+                            <forename>Rubens</forename>
+                            <surname>Santoro</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <nationality key="IT">italiana</nationality>
+                        <occupation>Artista</occupation>
+                    </person>
+                </listPerson>
+                
+                <!--Luoghi-->
+                <listPlace>
+                    <place xml:id="RV">
+                        <placeName>Ravenna</placeName>
+                        <location>
+                            <settlement type="località">Città</settlement>
+                            <district type="comune">Ravenna</district>
+                            <district type="provincia">RV</district>
+                            <region>Emilia-Romagna</region>
+                            <country key="IT">IT</country>
+                        </location>
+                    </place>
+                    <place xml:id="GO">
+                        <placeName>Gorizia</placeName>
+                        <location>
+                            <settlement type="località">Città</settlement>
+                            <district type="comune">Gorizia</district>
+                            <district type="provincia">GO</district>
+                            <region>Friuli-Venezia Giulia</region>
+                            <country key="IT">IT</country>
+                        </location>
+                    </place>
+                    <place xml:id="PI">
+                        <placeName>Pisa</placeName>
+                        <location>
+                            <settlement type="località">Città</settlement>
+                            <district type="comune">Pisa</district>
+                            <district type="provincia">PI</district>
+                            <region>Toscana</region>
+                            <country key="IT">IT</country>
+                        </location>
+                    </place>
+                    <place xml:id="VE">
+                        <placeName>Venezia</placeName>
+                        <location>
+                            <settlement type="località">Città</settlement>
+                            <district type="comune">Venezia</district>
+                            <district type="provincia">VE</district>
+                            <region>Veneto</region>
+                            <country key="IT">IT</country>
+                        </location>
+                    </place>
+                </listPlace>
+
+                <!--Organizzazioni-->
+                <listOrg>
+                    <org xml:id="UNIPI" type="university">
+                    <orgName>Università di <placeName ref="#PI">Pisa</placeName></orgName>
+                    <desc>Università degli studi di Pisa (1343)</desc>
+                    </org>
+                </listOrg>
+            </sourceDesc>
+        </fileDesc>
+
+        <profileDesc>
+        <!--Informazioni di corrispondenza-->
+        <!--Cartolina 118-->
+            <correspDesc xml:id="corresp118">
+                <correspAction type="sent">
+                    <persName ref="#GC">Giovanni Coliola</persName>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#OT">Olivia Turtura</persName>
+                </correspAction>
+            </correspDesc>
+
+        <!--Cartolina 125-->
+            <correspDesc xml:id="corresp125">
+                <correspAction type="sent">
+                    <persName ref="#GC">Giovanni Coliola</persName>
+                    <date type="writing" when="1916-9-27">1916/9/27</date> 
+                </correspAction>
+
+                <correspAction type="received">
+                    <persName ref="#OT">Olivia Turtura</persName>
+                </correspAction>
+            </correspDesc>
+        <!--Lingua-->
+            <langUsage>
+                <language ident="it-IT">italiano</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+
+
+    <!--Cartolina 7694-118-->
+    <TEI xml:id="Cart118">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>[Donna in città]</title>
+                </titleStmt>
+                <publicationStmt>
+                    <publisher><orgName ref="#UNIPI">Università di Pisa</orgName></publisher>
+
+                    <availability>
+                            <p>Disponibile solo su licenza</p>
+                        </availability>
+
+                    <date when="2019">2019</date>
+
+                    <distributor>LabCD</distributor>
+
+                    <address>
+                        <addrLine>Laboratorio di Cultura Digitale - <orgName type="university">Università di Pisa</orgName></addrLine>
+                        
+                        <addrLine><placeName ref="#PI">Pisa</placeName></addrLine>
+                    </address>
+                </publicationStmt>
+
+                <notesStmt xml:id="notes118">
+                    <note>Nota sulla cartolina: la cartolina non reca data di stampa.</note>
+                    <note>Nota sulla cartolina: non viene specificata la data in cui è stata scritta la cartolina.</note>
+                    <note>Nota sul mittente: non è presente il cognome del mittente.</note>
+                    <note>Nota sul destinatario: non sono presenti il cognome e l'indirizzo del destinatario.</note>
+                    <note facs="#artistsig">Nota sull'artista: sul fronte è presente la firma dell'artista</note>
+                </notesStmt>
+
+                <sourceDesc>
+                    <bibl type="cartolina">
+                        <respStmt>
+                            <resp>Ente di appartenenza:</resp>
+                            <name>Sistema bibliotecario e museale<placeName ref="#SP">Comune di La Spezia</placeName></name>
+                        </respStmt>
+
+                        <respStmt>
+                            <resp>Luogo di conservazione delle cartoline originali:</resp>
+                            <name type="institution">Museo Civico Etnografico "<persName><forename>Giovanni</forename> <surname>Podenzana</surname></persName>"</name>
+                        </respStmt>
+                    </bibl>
+                    <msDesc>
+                        <msIdentifier>
+                            <country>Italia</country>
+                            <settlement><placeName ref="#SP">La Spezia</placeName> (SP)</settlement>
+                            <repository>Museo Civico Etnografico "<persName><forename>Giovanni</forename> <surname>Podenzana</surname></persName>", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                            
+                            <!--Codice identificativo-->
+                            <idno>7694_118_001/002</idno>
+                        </msIdentifier>
+
+                        <msContents>
+                            <summary>Cartolina Artistica</summary>
+                            <textLang>Italiano</textLang>
+                        </msContents>
+                    </msDesc>
+                </sourceDesc>
+            </fileDesc>
+            <profileDesc>
+                <textClass>
+                    <keywords>
+                        <term>Cartolina</term>
+                        <term>Cartolina artistica</term>
+                        <term>Donna a passeggio con un cappotto giallo e cappello e gonna neri</term>
+                    </keywords>
+                </textClass>
+                <langUsage>
+                    <language ident="it-IT">italiano</language>
+                </langUsage>
+            </profileDesc>
+        </teiHeader>
+
+        <!--Definizione-->
+        <text type="cartolina" xml:id="C118">
+
+            <!--Trascrizione-->
+            <body>
+            <!--Fronte-->
+                <div type="fronte">
+                    <figure>
+                        <graphic xml:id="front118" url="7694-118F.jpg" />
+                        <figDesc xml:id="d118">Sul fronte della cartolina è raffigurata una donna dai capelli rossi che passeggia in città.
+                        La donna indossa una giacca gialla con una spilla a forma di fiore rosso e scarpe, calze e cappello neri.
+                        La donna è raffigurata con gli occhi chiusi. Alle sue spalle ci sono le ombre di persone e di una carrozza.
+                        Inoltre è presente la firma dell'artista.
+                        </figDesc>
+                        <head>[Donna in città]</head>
+                    </figure>
+                    <div>
+                        <p>
+                            <s facs="#line1_118F">Perdonami <persName ref="#OT"><forename>Olivia</forename></persName> di quanti ti faccio</s>
+                            <s facs="#line2_118F">soffrire<pc>.</pc> mi è venuta la tentazione</s>
+                            <s facs="#line3_118F">di lasciare questi miei scritti<pc>.....</pc>ma poi</s>
+                            <s facs="#line4_118F">che dirti<pc>.....</pc>ho l'animo pieno</s>
+                            <s facs="#line5_118F">di veleno<pc>....</pc>perché nasconderti che sono cattivo<pc>,</pc> ora<pc>.</pc></s>
+                            <s facs="#line6_118F">Non sarei sincero con te<pc>......</pc>t'amo questo si<pc>.</pc></s>
+                        </p>
+                        <closer facs="closer118">
+                            <salute>Ti bacio puotentamente tuo con l'anima
+                            per sempre<pc>,</pc> in eterno malgrado tutto<pc>.</pc></salute>
+                            <signed><persName type="nickname">Giovannino</persName></signed>
+                        </closer>
+                    </div>
+                </div>
+                <!--Retro-->
+                <div type="retro">
+                    <figure>
+                        <graphic xml:id="back118" url="7694-118R.jpg" />
+                    </figure>
+                    <p>
+                        <s facs="#line1_118R">Anche questa domenica è passata nella più squallida <unclear>assoli</unclear><pc force="inter">=</pc></s>
+                        <s facs="#line2_118R">tà di mente e di spirito<pc>,</pc> senza il conforto d'uno sguardo<pc>,</pc></s>
+                        <s facs="#line3_118R">di una lieve stretta di mano<pc>.</pc> È il più snervante <unclear>passoli</unclear>smo<pc>.</pc></s>
+                        <s facs="#line4_118R">Io credo di non conoscere perfettamente me stesso<pc>,</pc> ma se io</s>
+                        <s facs="#line5_118R">cercassi di spiegarti tutto quello che mi turbina in cuore<pc>,</pc></s>
+                        <s facs="#line6_118R">l'alto canto che faccio di questa mia misera vita<pc>,</pc> e il disprezzo</s>
+                        <s facs="#line7_118R">dei tempi<pc>,</pc> l'obbrobriosa società<pc>,</pc> la mancanza del mio av<pc force="inter">=</pc></s>
+                        <s facs="#line8_118R">venire<pc>,</pc> il timore del tuo nei riguardi del mio grande amore<pc>,</pc></s>
+                        <s facs="#line9_118R">forse ti apparirei troppo cattivo e ti farei piangere<pc>.</pc> Tu non mi</s>
+                        <s facs="#line10_118R">capiresti<pc>!</pc><pc>......</pc> Tu non sai che il tuo amore è</s>
+                        <s facs="#line11_118R">divenuto il mio martirio e lo sarà per tutta la mia vita</s> 
+                        <s facs="#line12_118R">perché sento inseparabile il mio destino<pc>.</pc> Ti vivrò sempre lon<pc force="inter">=</pc></s>
+                        <s facs="#line13_118R">tano<pc>.</pc> e poi ho perduto la fede delle mie forze <pc>.......</pc> <num facs="#numeroid">118</num></s>
+                        <s facs="#line14_118R">sono cattivo cattivo cattivo</s>
+                    </p>
+                </div>
+                <!--Timbri-->
+                <div>
+                    <!--Posizione verticale-->
+                    <p facs="#timbrolato118" style="writing-mode: vertical-lr; text-orientation: sideways-left">
+                        <stamp type="printed">
+                            <s>Proprietà artistica riservata N° 201-6</s>
+                        </stamp>
+                    </p>
+                </div>
+                <div>
+                    <p facs="#timbroup118">
+                        <stamp type="printed">
+                            <s>Produzione Italiana</s>
+                        </stamp>
+                    </p>
+                </div>
+            </body>
+        </text>
+        <facsimile>
+            <surface xml:id="cart118f">
+                <graphic url='7694-118F.jpg' width='1054.4px' height='1629.4px' />
+                <zone xml:id="closer118" ulx="4" uly="209" lrx="326" lry="1622" />
+                <zone xml:id="line1_118F" ulx="581" uly="533" lrx="719" lry="1591" />
+                <zone xml:id="line2_118F" ulx="699" uly="608" lrx="834" lry="1621" />
+                <zone xml:id="line3_118F" ulx="799" uly="593" lrx="885" lry="1613" />
+                <zone xml:id="line4_118F" ulx="863" uly="710" lrx="951" lry="1615" />
+                <zone xml:id="line5_118F" ulx="962" uly="137" lrx="1014" lry="1611" />
+                <zone xml:id="line6_118F" ulx="1014" uly="225" lrx="1051" lry="1529" />
+                <zone xml:id="donna118" ulx="100" uly="67" lrx="715" lry="1584" />
+                <zone xml:id="carrozza118" ulx="607" uly="85" lrx="891" lry="470" />
+                <zone xml:id="artistsig" ulx="756" uly="580" lrx="1003" lry="630" />
+            </surface>
+
+            <surface xml:id="cart118r">
+                <graphic url='7694-118R.jpg' width='1626.4px' height='1056.4px' />
+                <zone xml:id="line1_118R" ulx="8" uly="6" lrx="1610" lry="128" />
+                <zone xml:id="line2_118R" ulx="4" uly="110" lrx="1595" lry="195" />
+                <zone xml:id="line3_118R" ulx="4" uly="212" lrx="1623" lry="283" />
+                <zone xml:id="line4_118R" ulx="0" uly="267" lrx="1575" lry="349" />
+                <zone xml:id="line5_118R" ulx="28" uly="360" lrx="1578" lry="425" />
+                <zone xml:id="line6_118R" ulx="23" uly="441" lrx="1608" lry="508" />
+                <zone xml:id="line7_118R" ulx="22" uly="518" lrx="1604" lry="590" />
+                <zone xml:id="line8_118R" ulx="22" uly="594" lrx="1607" lry="688" />
+                <zone xml:id="line9_118R" ulx="8" uly="674" lrx="1606" lry="777" />
+                <zone xml:id="line10_118R" ulx="24" uly="757" lrx="1600" lry="824" />
+                <zone xml:id="line11_118R" ulx="11" uly="830" lrx="1548" lry="893" />
+                <zone xml:id="line12_118R" ulx="13" uly="897" lrx="1596" lry="966" />
+                <zone xml:id="line13_118R" ulx="7" uly="967" lrx="1558" lry="1029" />
+                <zone xml:id="line14_118R" ulx="65" uly="1030" lrx="657" lry="1054" />
+                <zone xml:id="numeroid" ulx="1350" uly="969" lrx="1491" lry="1046" />
+                <zone xml:id="timbrolato118" ulx="2" uly="389" lrx="22" lry="986" />
+                <zone xml:id="timbroup118" ulx="1311" uly="63" lrx="1542" lry="347" />
+            </surface>
+        </facsimile>
+        
+    </TEI>
+
+    <!--Cartolina 7694-125-->
+    <TEI xml:id="Cart125">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>La casa della fioraia</title>
+                </titleStmt>
+                <publicationStmt>
+                    <publisher><orgName ref="#UNIPI">Università di Pisa</orgName></publisher>
+
+                    <availability>
+                        <p>Disponibile solo su licenza</p>
+                    </availability>
+
+                    <date when="2019">2019</date>
+
+                    <distributor>LabCD</distributor>
+
+                    <address>
+                        <addrLine>Laboratorio di Cultura Digitale - <orgName type="university">Università di Pisa</orgName></addrLine>
+                        
+                        <addrLine><placeName ref="#PI">Pisa</placeName></addrLine>
+                    </address>
+                </publicationStmt>
+
+                <notesStmt xml:id="notes125">
+                    <note>Nota sul mittente: non è presente il suo cognome.</note>
+                    <note>Nota sul destinatario: non sono presenti il suo cognome e il suo indirizzo.</note>
+                    <note facs="#artistsig125">Nota sull'artista: è presente la sua firma sul fronte della cartolina.</note>
+                </notesStmt>
+
+                <sourceDesc>
+                    <bibl type="cartolina">
+                        <respStmt>
+                            <resp>Ente di appartenenza:</resp>
+                            <name>Sistema bibliotecario e museale <placeName ref="#SP">Comune di La Spezia</placeName></name>
+                        </respStmt>
+
+                        <respStmt>
+                            <resp>Luogo di conservazione delle cartoline originali:</resp>
+                            <name type="institution">Museo Civico Etnografico "<persName><forename>Giovanni</forename> <surname>Podenzana</surname></persName>"</name>
+                        </respStmt>
+                    </bibl>
+                    <msDesc>
+                        <msIdentifier>
+                            <country>Italia</country>
+                            <settlement><placeName ref="#SP">La Spezia</placeName> (SP)</settlement>
+                            <repository>Museo Civico Etnografico "<persName><forename>Giovanni</forename> <surname>Podenzana</surname></persName>", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                            
+                            <!--Codice identificativo-->
+                            <idno>7694_125_001/002</idno>
+                        </msIdentifier>
+
+                        <msContents>
+                            <summary>Cartolina Artistica</summary>
+                            <textLang>Italiano</textLang>
+                        </msContents>
+                    </msDesc>
+                </sourceDesc>
+            </fileDesc>
+            <profileDesc>
+                <textClass>
+                    <keywords>
+                        <term>Cartolina</term>
+                        <term>Cartolina artistica</term>
+                        <term>Vista su un giardino</term>
+                    </keywords>
+                </textClass>
+                <langUsage>
+                    <language ident="it-IT">italiano</language>
+                </langUsage>
+            </profileDesc>
+
+        </teiHeader>
+
+        <!--Definizione-->
+        <text type="cartolina" xml:id="C125">
+
+        <!--Trascrizione-->
+            <body>
+                <div type="fronte"> 
+                    <figure>
+                        <graphic xml:id="front125" url="7694-125F.jpg" />
+                        <figDesc xml:id="d125">La cartolina raffigura una donna con un abito scuro seduta su uno scalino, intenta a comporre
+                        un mazzo di fiori. Ai suoi piedi si trova un vaso di fiori, mentre alle sue spalle si vede un cortile.
+                        </figDesc>
+                        <head>La casa della fioraia</head>
+                    </figure>
+                </div>
+                <div type="retro">
+                    <figure>
+                        <graphic xml:id="back125" url="7694-125R.jpg" />
+                    </figure>
+                    <opener>
+                        <dateline>
+                            <rs>Lì</rs>
+                            <date>27/9 1916</date>
+                        </dateline>
+                        <salute>Mia buona <persName ref="#OT"><forename>Olivia</forename></persName>,</salute>
+                    </opener>
+                    <p>
+                        <num facs="#numeroid125">125</num>
+                        <s facs="#line1_125">nemmeno<pc>,</pc></s>
+                        <s facs="#line2_125">oggi voglio lasciarti senza il mio affettuoso saluto<pc>,</pc></s>
+                        <s facs="#line3_125">malgrado la grande attività mi tenga occupato</s>
+                        <s facs="#line4_125">giorno e notte per il cambio di posizioni<pc>.</pc></s>
+                        <s facs="#line5_125">Questa notte si parte per la trincea<pc>.</pc> Coraggio</s>
+                        <s facs="#line6_125">mia carissima <persName ref="#OT"><forename>Olivia</forename></persName><pc>.</pc> Pensa che il tuo <persName type="nickname">Giovan</persName><pc force="inter">=</pc></s>
+                        <s facs="#line7_125"><persName>nino</persName> è con te<pc>,</pc> per te<pc>,</pc> t'ama t'ama tanto</s>
+                        <s facs="#line8_125">tanto appassionatamente<pc>,</pc> estremamente<pc>.</pc> Sii sempre</s>
+                        <s facs="#line9_125">buona e voglimi bene<pc>.</pc></s>
+                    </p>
+
+                    <p style="writing-mode: vertical-lr; text-orientation: sideways-left">
+                        <s facs="line10dx_125">Oggi mi sono recato a <placeName ref="#GO">Gorizia</placeName><pc>.</pc></s>
+                    </p>
+                    <closer facs="closer125">
+                        <salute>Con tutto l'animo mio <gap reason="illeggibile" unit="word" resp="#MT"></gap> un soavissimo bacio dal tuo</salute>
+                        <signed>Giovannino</signed><pc>.</pc>
+                    </closer>
+                </div>
+                <!--Timbri-->
+                <div>
+                    <p facs="#timbrove">
+                        <stamp type="printed">
+                            <s>XI ESPOSIZIONE INTERNAZIONALE D'ARTE 
+                            DELLA <placeName ref="#VE">CITTÀ DI VENEZIA</placeName> <pc>-</pc> <num>MCMXIV</num></s>
+                        </stamp>
+                    </p>
+                </div>
+                <div>
+                    <p facs="#timbroprop" style="writing-mode: vertical-lr; text-orientation: sideways-left">
+                        <stamp type="printed">
+                            <s>Proprietà artistica riservata - 278</s>
+                        </stamp>
+                    </p>
+                </div>
+                <div>
+                    <p facs="#timbroart">
+                        <stamp type="printed">
+                            <s><persName ref="#RS"><forename>RUBENS</forename><surname>SANTORO</surname></persName></s>
+                            <s>La casa della fioraia</s>
+                            <s><foreign xml:lang="fr">La Maison de la Bouquecière</foreign></s>
+                            <s><foreign xml:lang="de">Das Haus des Blumenmädchens</foreign></s>
+                            <s><foreign xml:lang="en">The house of the flower girl</foreign></s>
+                        </stamp>
+                    </p>
+                </div>
+            </body>
+        </text>
+        <facsimile>
+            <surface xml:id="cart125f">
+                <graphic url='7694-125F.jpg' width='1031.4px' height='1627.4px' />
+                <zone xml:id="donna125" ulx="442" uly="629" lrx="848" lry="1386" />
+                <zone xml:id="vaso125" ulx="214" uly="1150" lrx="591" lry="1472" />
+                <zone xml:id="mazzo125" ulx="588" uly="741" lrx="725" lry="917" />
+                <zone xml:id="giardino125" ulx="62" uly="3" lrx="575" lry="1004" />
+                <zone xml:id="artistsig125" ulx="851" uly="1452" lrx="1016" lry="1488" />       
+            </surface>
+
+            <surface xml:id="cart125r">
+                <graphic url='7694-125R.jpg' width='1625.4px' height='1036.4px' />
+                <zone xml:id="numeroid125" ulx="1432" uly="4" lrx="1588" lry="61" />
+                <zone xml:id="data125" ulx="69" uly="0" lrx="575" lry="190" />
+                <zone xml:id="saluto125" ulx="603" uly="10" lrx="1313" lry="111" />
+                <zone xml:id="line1_125" ulx="1320" uly="62" lrx="1612" lry="103" />
+                <zone xml:id="line2_125" ulx="39" uly="123" lrx="1588" lry="291" />
+                <zone xml:id="line3_125" ulx="16" uly="247" lrx="1569" lry="416" />
+                <zone xml:id="line4_125" ulx="15" uly="346" lrx="1451" lry="512" />
+                <zone xml:id="line5_125" ulx="71" uly="418" lrx="1520" lry="599" />
+                <zone xml:id="line6_125" ulx="49" uly="511" lrx="1551" lry="689" />
+                <zone xml:id="line7_125" ulx="47" uly="604" lrx="1547" lry="752" />
+                <zone xml:id="line8_125" ulx="72" uly="694" lrx="1570" lry="860" />
+                <zone xml:id="line9_125" ulx="107" uly="778" lrx="890" lry="896" />
+                <zone xml:id="signature125" points=' 912,820 107,932 217,1031 1577,1035 1582,855 ' />
+                <zone xml:id="line10dx_125" ulx="1569" uly="253" lrx="1624" lry="1022" />
+                <zone xml:id="timbrove" ulx="307" uly="131" lrx="1235" lry="252" />
+                <zone xml:id="timbroprop" ulx="56" uly="365" lrx="84" lry="838" />
+                <zone xml:id="timbroart" ulx="111" uly="882" lrx="655" lry="1009" />
+            </surface>
+        </facsimile>
+    </TEI>
+
+</TEI>
