@@ -1,4 +1,0 @@
-<!ELEMENT root (p)>
-<!ELEMENT p (l)>
-<!ELEMENT l (#PCDATA)>
-<!ATTLIST p tipo (verso) #REQUIRED>
