@@ -1,2 +1,2 @@
 # CorsoCodifica
-Corso Codifica di Testi AA. 2022/2023
+Corso Codifica di Testi AA. 2021/2022
